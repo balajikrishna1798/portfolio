@@ -24,7 +24,7 @@ const AboutSection = () => {
           <h2 className="mb-4 font-bold text-4xl">About me</h2>
           <p className="text-base lg:text-lg">
             <span className="inline-block first-letter:pl-4">
-              I have almost 2 years of experience in IT industry as FullStack
+              I have almost 1.5 years of experience in IT industry as FullStack
               Developer.I have knowledge on HTML, SCSS, Tailwindcss, Bootstrap,
               Django RestFramework,Reactjs,Nodejs and Nextjs.I have Worked in 2
               client Projects (
