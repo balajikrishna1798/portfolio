@@ -4,10 +4,10 @@ import React, { useState, useTransition } from "react";
 import about from "@/public/about.jpeg";
 import TapButton from "./TapButton";
 
-const Tap_Data = [{title:"Skills",id:"skills",content:(<ul><li>Reactjs</li><li>Nodejs</li></ul>)}, {title:"Education",id:"education",content:(<ul><li>Bachelor of Commerce(Computer Applications)</li><li>Master of Computer Applications</li></ul>)}, {title:"Skills",id:"skills",content:(<ul><li>Reactjs</li><li>Nodejs</li></ul>)}];
+const Tap_Data = [{title:"Skills",id:"skills",content:(<ul className="flex flex-col gap-1 list-disc ml-5"><li>Reactjs</li><li>Nodejs</li><li>Expressjs</li><li>Nextjs</li><li>Django Restframework</li><li>Django</li></ul>)}, {title:"Education",id:"education",content:(<ul className="flex flex-col gap-1 list-disc ml-5"><li>Bachelor of Commerce (Computer Applications)</li><li>Master of Computer Applications</li></ul>)}, {title:"Experience",id:"experience",content:(<ul className="flex flex-col gap-1 list-disc ml-5"><li>1 year of Django RestFramework</li><li>1.5 years of Reactjs</li><li>4 Months of Nextjs</li><li>5 Months of Django</li></ul>)}];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("education");
+  const [tab, setTab] = useState("skills");
   console.log(tab);
   const [isPending, startTransition] = useTransition();
   const handleTapChange = (id) => {
@@ -15,6 +15,7 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 items-center xl:gap-16 sm:px-16 sm:py-16">
@@ -53,7 +54,7 @@ const AboutSection = () => {
             >
               Experience
             </TapButton>
-            {Tap_Data.find(a=>a.id===tab).content}
+            <div className="mt-2">{Tap_Data.find(a=>a.id===tab).content}</div>
           </div>
           
         </div>

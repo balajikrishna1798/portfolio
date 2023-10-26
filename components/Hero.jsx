@@ -4,8 +4,15 @@ import Image from "next/image";
 import React from "react";
 import profile from "@/public/profile.png";
 import { TypeAnimation } from 'react-type-animation';
- 
 const Hero = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Balaji_Resume.pdf';  // Path to your PDF file in the public folder
+    link.download = 'Balaji.M Resume.pdf';  // Suggest a filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -34,7 +41,7 @@ const Hero = () => {
             <button className="px-6 py-3 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit mr-4 bg-white hover:bg-slate-200  text-white">
               Hire me
             </button>
-            <button className="px-1 py-1 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit bg-transparent text-white hover:bg-slate-800 mt-3">
+            <button onClick={handleDownloadCV} className="px-1 py-1 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit bg-transparent text-white hover:bg-slate-800 mt-3">
               <span className="bg-black rounded-full block px-5 py-2">Download CV</span>
             </button>
           </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="fixed left-0 top-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex justify-between items-center mx-auto p-4">
         <Link href="/" className="text-lg md:text-5xl font-semibold text-white">
-          Logo
+          PORTFOLIO
         </Link>
         <div className="block md:hidden text-white">
         {!navbarOpen?<Bars3Icon className="h-5 w-5" onClick={()=>setNavbarOpen(true)}/>:<XMarkIcon className="h-5 w-5" onClick={()=>setNavbarOpen(false)}/>}
