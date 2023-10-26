@@ -11,10 +11,10 @@ const Hero = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 text-center sm:text-left">
           
-          <h1 className="text-4xl lg:text-2xl font-extrabold mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500  via-yellow-500 to-orange-500 text-4xl">Hello, I'm </span><span className="text-4xl">M.Balaji</span>
+          <h1 className="text-[18px] lg:text-2xl font-semibold mb-4">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500  via-yellow-500 to-orange-500 text-4xl">Hello, I'm </span><span className="text-4xl text-white">M.Balaji</span>
             <br />
-            <TypeAnimation className="mt-3"
+            <TypeAnimation className="mt-3 block  text-white"
       sequence={[
         'Python FullStack Developer',
         1000,
@@ -28,7 +28,7 @@ const Hero = () => {
     />
           </h1>
           <p className="text-lg lg:text-xl text-[#ADB7BE]">
-            I have almost 2 years of experience in IT industry as FullStack Developer.I have knowledge on Django RestFramework,Reactjs,Nodejs and Nextjs.
+            Master of Computer Applications - 2022
           </p>
           <div>
             <button className="px-6 py-3 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit mr-4 bg-white hover:bg-slate-200  text-white">
