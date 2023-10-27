@@ -38,9 +38,7 @@ const Hero = () => {
             Master of Computer Applications - 2022
           </p>
           <div>
-            <button className="px-6 py-3 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit mr-4 bg-white hover:bg-slate-200  text-white">
-              Hire me
-            </button>
+          
             <button onClick={handleDownloadCV} className="px-1 py-1 rounded-full w-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 sm:w-fit bg-transparent text-white hover:bg-slate-800 mt-3">
               <span className="bg-black rounded-full block px-5 py-2">Download CV</span>
             </button>
